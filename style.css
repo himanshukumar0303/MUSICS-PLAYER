@@ -1,0 +1,1659 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color:black;
+}
+
+
+/* body-header */
+
+header{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	background-color:#151515;
+}
+/* body-header-left */
+
+#header-left{
+	width: 35%;
+	position: relative;
+	display: flex;
+}
+
+header #logo{
+	width: 100px;
+}
+header #logo img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+header #logo-name{
+	width: 10vw;
+	color: white;
+	margin-left: 10px;
+	padding-top: 15px;
+}
+header #logo-name span{
+	display: block;
+	font-size: 1.5rem;
+}
+
+header #favourite{
+	width: 2rem;
+	align-self: center;
+
+}
+header #favourite h2{
+	cursor: pointer;
+	color: rgb(151, 145, 145);
+	transition: ease-in-out 0.5s;
+}
+header #favourite h2:hover{
+	color: rgb(212, 212, 212);
+}
+
+/* body-header-right */
+
+#header-right{
+	width: 55%;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* header-search-conatiner */
+
+#header-right #search-bar{
+	width: 70%;
+	height: 50px;
+	border-radius: 20px;
+	padding: 5px;
+	position: relative;
+	background-color: #5050ff4d;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+/* header-search-bar */
+
+#header-right #search-bar input{
+	width: 85%;
+	font-size: 1.6rem;
+	outline: none;
+	border: none;
+	padding: 5px;
+	color: white;
+	background-color: #5050ff00;
+}
+
+#header-right #search-bar input::placeholder{
+	font-size: 1.7rem;
+}
+
+/* search-container-icon */
+#header-right #search-bar span{
+	color: silver;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+
+/* notification-bell */
+
+#header-right #noto-bell{
+	font-size: 2rem;
+}
+
+#header-right #noto-bell a{
+	color: white;
+}
+
+/* user-profile-avatar */
+#header-right #header-profile{
+	width: 4rem;
+	height: 4rem;
+	
+}
+#header-right #header-profile img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+/* used for mobile mode and tablet mode making using accordion */
+#header-right #aside-btn input{
+	display: none;
+}
+#header-right #aside-btn label{
+	color: white;
+	font-size: 1.8rem;
+	cursor: pointer;
+	display: none;
+}
+
+/* aside-secion-for mobile and tablet mode */
+aside{
+	width: 330px;
+	height: 100vh;
+	background-color: black;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index:999999999999;
+	display: none;
+}
+#btn:checked ~ #aside{
+	display: block;
+	opacity: 1;
+  
+}
+
+/* aside-container */
+
+#aside #aside-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* aside-user-avatar */
+#aside #aside-profile{
+	width: 5rem;
+	height: 5rem;
+	margin: 2rem 0;
+}
+#aside #aside-profile img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+/* to see the fav list */
+#aside #aside-fav{
+	font-size: 2rem;
+	margin: 0rem 0 2rem;
+	color: white;
+	cursor: pointer;
+}
+/* search-bar */
+#aside #aside-search-bar{
+	width: 85%;
+	height: 50px;
+	border-radius: 10px;
+	padding: 5px;
+	position: relative;
+	background-color: #5050ff4d;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#aside #aside-search-bar #input{
+	width: 85%;
+	font-size: 1.6rem;
+	outline: none;
+	border: none;
+	padding: 5px;
+	color: white;
+	background-color: #5050ff00;
+	display: block;
+}
+/* search-icon */
+#aside #aside-search-bar span{
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+#aside #aside-search-bar #input::placeholder{
+	font-size: 1.7rem;
+}
+
+#aside #aside-search-bar span .fa-microphone{
+	color: silver;
+}
+
+/*main-part*/
+
+main{
+	display: flex;
+	margin-top: 1.2rem;
+	position: relative;
+	justify-content: space-around;
+}
+
+/* divide into parts one for queue and main-conetnt */
+
+/* main-left-container */
+
+#main-left{
+	width: 75%;
+	height:auto;
+	padding: 50px;
+}
+
+/* in main left there are many container- common bottom */
+#main-left>div{
+	margin-bottom: 3rem;
+}
+
+
+/*carousel-bar */
+#carousel {
+	display: flex;
+	flex-direction: row;
+	height: 40vh;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+/* common-box-shadow-forall-div */
+#carousel>div{
+	box-shadow: 0 0 5px 2px rgb(255, 64, 30) ;
+} 
+
+/* filter the image by grayscale */
+.gray{
+	filter: grayscale(100);
+}
+
+/* styling-first-image */
+#firstImg{
+	width: 20vw;;
+	top: 8vh;
+	height: 20vh;
+	background-image: url("https://cdn.quotesgram.com/img/20/41/1232688716-facebook-cover-photos-music-quotes-i18.jpg");
+	background-size: cover;
+	background-position: center;
+	background-color: black;
+}
+#firstImg:hover{
+	filter: none;
+	z-index: 1;
+	height: 30vh;
+	width: 40vw;
+	top:2vh;
+	box-shadow: 0 0 20px 4px rgb(3, 92, 104) ;
+	transition: all linear 0.1s ;
+}
+#firstImg:hover ~ #middle{
+	filter: grayscale(100%);
+	z-index:0;
+	box-shadow: 0 0 20px 4px rgb(247, 52, 4) ;
+	transition: all linear 0.1s ;
+}
+
+/* styling-second-image */
+#middleImg{
+	z-index: 1;
+	height: 24vh;
+	width: 33vw;
+	background-image: url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: black;
+}
+#middleImg:hover{
+	filter: none;
+	height: 30vh;
+	width: 40vw;
+	top: 2vh;
+	z-index: 1;
+	box-shadow: 0 0 20px 4px rgb(247, 52, 4);
+	transition: linear 0.1s all;
+}
+
+/* styling-third-image */
+#thirdImg{
+	width:20vw;
+	background-position: center;
+	background-image: url("https://images.pexels.com/photos/1482476/pexels-photo-1482476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	background-size:cover;
+	height: 20vh;
+	top: 8vh;
+	left: 40vw;
+	background-color: black;
+}
+	
+#thirdImg:hover{
+	filter: none;
+	z-index: 1;
+	height: 30vh;
+	width: 40vw;
+	box-shadow: 0 0 20px 4px dodgerblue;
+	transition: linear 0.1s all;
+} 
+
+#thirdImg:hover ~ #middle{
+	filter: grayscale(100%);
+	z-index:0;
+	box-shadow: 0 0 20px 4px rgb(247, 52, 4);
+	transition: all linear 0.1s ;
+}
+
+
+/* latest-release */
+#latest-release{
+	width: 100%;
+	height: auto;
+	padding: 0.5rem;
+	color: white;
+}
+
+
+/* latest-release-container */
+
+#latest-release-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #0f0e0e;
+	margin-top: 1rem;
+}
+
+/* common-width for all content box */
+
+#latest-release-content>div{
+	height:auto;
+	width: 40%;
+	margin: 1rem 1rem 1rem 0rem;
+}
+
+/* latest release content in flex */
+
+#main-left #latest-release-content .lat-release{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+/* image width */
+
+#latest-release-content .lat-rel-img{
+	width: 8rem;
+	position: relative;
+}
+#latest-release-content .lat-rel-img img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+}
+
+/* icon for target footer */
+
+#latest-release-content .lat-rel-img .fs-play{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 1.8rem;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	z-index: 10;
+	transition: ease-in-out 0.5s;
+
+}
+#latest-release-content .lat-rel-img .fs-play a{
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* display when we hover */
+
+#latest-release-content .lat-rel-img .fs-play:hover{
+	opacity: 1;
+
+}
+
+/* to style the title */
+
+#latest-release-content .lat-title{
+
+	padding: 25px 15px;
+	width: 15rem;
+	line-height:1.7rem;
+	flex-grow: 1;
+}
+
+/* to style the time */
+
+#latest-release-content .time{
+	width:4.5rem;
+	line-height: 1.6rem;
+	padding: 20px 8px;
+	position: relative;
+}
+
+/* latest release feature like adding to queue, fav for the users using accordion */
+
+/* forFirst conetent */
+
+#ecclipse1{
+	display: inline-block;
+	height: auto;
+	width: 1.2rem;
+	margin: auto;
+	
+}
+#button1{
+	display: none;
+}
+#ecclipse1 i{
+	transform: rotate(180deg);
+	font-size: 1.2rem
+}
+#ecclipse1-list{
+	position: absolute;
+	top:3rem;
+	right: 2.8rem;
+	width: 12rem;
+	height: auto;
+	padding: 10px;
+	font-size: 1rem;
+	background-color: #222;
+	display: none;
+	z-index: 1;
+
+}
+#ecclipse1 label{
+  	cursor: pointer;
+}
+
+#ecclipse1-list i{
+	display: inline-block;
+	margin-right: 1.5rem;
+	transform: rotate(360deg);
+}
+#ecclipse1-list p{
+	display: inline-block;
+	font-size: 1.2rem;
+}
+#ecclipse1-list .hr{
+	border-bottom: 1px solid white;
+	margin: 0.5rem 0;
+}
+
+#button1:checked ~#ecclipse1-list{
+  display: block;
+}
+
+/* forSecond conetent */
+
+#ecclipse2{
+	display: inline-block;
+	height: auto;
+	width: 1.2rem;
+	margin: auto;
+	
+}
+#button2{
+	display: none;
+}
+#ecclipse2 i{
+	transform: rotate(180deg);
+	font-size: 1.2rem
+}
+#ecclipse2-list{
+	position: absolute;
+	top:3rem;
+	right: 2.8rem;
+	width: 12rem;
+	height: auto;
+	padding: 10px;
+	font-size: 1rem;
+	background-color: #222;
+	display: none;
+	z-index: 1;
+}
+#ecclipse2 label{
+  	cursor: pointer;
+}
+
+#ecclipse2-list i{
+	display: inline-block;
+	margin-right: 1.5rem;
+	transform: rotate(360deg);
+}
+#ecclipse2-list p{
+	display: inline-block;
+	font-size: 1.2rem;
+}
+#ecclipse2-list .hr{
+	border-bottom: 1px solid white;
+	margin: 0.5rem 0;
+}
+
+#button2:checked ~#ecclipse2-list{
+  display: block;
+}
+
+/* forThird conetent */
+
+#ecclipse3{
+	display: inline-block;
+	height: auto;
+	width: 1.2rem;
+	margin: auto;
+	
+}
+#button3{
+	display: none;
+}
+#ecclipse3 i{
+	transform: rotate(180deg);
+	font-size: 1.2rem
+}
+#ecclipse3-list{
+	position: absolute;
+	top:3rem;
+	right: 2.8rem;
+	width: 12rem;
+	height: auto;
+	padding: 10px;
+	font-size: 1rem;
+	background-color: #222;
+	display: none;
+	z-index: 1;
+}
+#ecclipse3 label{
+  	cursor: pointer;
+}
+
+#ecclipse3-list i{
+	display: inline-block;
+	margin-right: 1.5rem;
+	transform: rotate(360deg);
+}
+#ecclipse3-list p{
+	display: inline-block;
+	font-size: 1.2rem;
+}
+#ecclipse3-list .hr{
+	border-bottom: 1px solid white;
+	margin: 0.5rem 0;
+}
+
+#button3:checked ~#ecclipse3-list{
+  display: block;
+}
+
+/* forFourth conetent */
+
+#ecclipse4{
+	display: inline-block;
+	height: auto;
+	width: 1.2rem;
+	margin: auto;
+	
+}
+#button4{
+	display: none;
+}
+#ecclipse4 i{
+	transform: rotate(180deg);
+	font-size: 1.2rem
+}
+#ecclipse4-list{
+	position: absolute;
+	top:3rem;
+	right: 2.8rem;
+	width: 12rem;
+	height: auto;
+	padding: 10px;
+	font-size: 1rem;
+	background-color: #222;
+	display: none;
+	z-index: 1;
+}
+#ecclipse4 label{
+  	cursor: pointer;
+}
+
+#ecclipse4-list i{
+	display: inline-block;
+	margin-right: 1.5rem;
+	transform: rotate(360deg);
+}
+#ecclipse4-list p{
+	display: inline-block;
+	font-size: 1.2rem;
+}
+#ecclipse4-list .hr{
+	border-bottom: 1px solid white;
+	margin: 0.5rem 0;
+}
+
+#button4:checked ~#ecclipse4-list{
+  display: block;
+}
+
+
+
+
+/* popualar-artist */
+
+#pop-artist{
+	color: white;
+	height: auto;
+	width: 100%;
+	padding: 0.5rem;
+}
+
+/* continer style */
+
+#pop-artist-container{
+	display: flex;
+	width: 100%;
+	height: auto;
+	justify-content: space-around;
+	margin-top: 2rem;
+	background-color: #0f0e0e;
+}
+
+/* common height and width for all content */
+
+#pop-artist-container > div{
+	height: 11rem;
+	width: 10rem;
+	text-align: center;
+}
+
+/* maintain-popular-artist-image */
+
+#pop-artist-container .pop-image{
+	width: 9rem;
+	height: 9rem;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+#pop-artist-container .pop-image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 2px 3px dodgerblue;
+	opacity: 0.8;
+}
+
+/* to move another page where each artist details */
+#pop-artist-container .artist-det{
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	position: absolute;
+	top:0;
+	transition: ease-in-out 0.5s;
+}
+#pop-artist-container .artist-det a{
+	color: white;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 2rem;
+}
+
+/* to see the details of artist when hover it icon appear and see on the other page */
+#pop-artist-container .artist-det:hover{
+	opacity: 1;
+}
+
+/* depends on your moods*/
+
+#mood{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	padding: 15px 7px;
+	background-color: #0f0e0e;
+	position: relative;
+}
+
+/* normal-image for show */
+#mood #station{
+	width:12rem;
+	height: 9rem;
+	position: relative;
+}
+#mood #station img{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+/* mood-conatiner */
+#mood-container{
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+}
+/* commion size */
+#mood-container> div{
+	width: 6rem;
+	height: 6rem;
+	position: relative;
+}
+
+/* all mood type image shiows */
+#mood #mood-container img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+
+/* common title style */
+#mood h3{
+	position: absolute;
+	color: white;
+	top:50%;
+	left: 50%;
+	font-size: 1.4rem;
+	letter-spacing: 3px;
+	transform: translate(-50%,-50%);
+}
+
+/* depends on your inner-feeling */
+
+#situation{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+/* common size style */
+#situation>div{
+	width: 21.5vw;
+	height: 12rem;
+	position: relative;
+	overflow: hidden;
+}
+#situation img{
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+	transition: ease-in-out 0.5s;
+}
+#situation img:hover{
+
+	transform: scale(1.2);
+}
+
+#situation p{
+	color: white;
+	font-size:1.9rem;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	cursor: default;
+}
+
+/* common-stylelatest-release-hindi-and english-songs */
+
+.latest{
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 5rem;
+	height: auto;
+}
+.latest>h2{
+
+	color: white;
+
+}
+
+/* container */
+
+.lat-container{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+	color: white;
+	background-color: #0f0e0e;
+}
+
+/* for common height and width for each content */
+.lat-container>div{
+	height: 14rem;
+	width: 10vw;
+}
+
+/* to style the image */
+
+.lat-container img{
+	height: 70%;
+	width: 100%;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	transition: ease-in-out 0.5s;
+}
+.lat-container img:hover{
+	opacity: 0.7;
+}
+.lat-container p{
+	margin-top: 0.6rem;
+}
+
+
+
+/* main-right */
+
+/* queue-portion */
+#main-right{
+	width: 25%;
+	height:100vh;
+	padding: 5px;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	overflow-y:scroll;
+
+}
+#main-right::-webkit-scrollbar {
+    display: none;
+}
+
+/* main-right-heading */
+
+#main-right-heading{
+	margin-bottom: 3rem;
+}
+
+#main-right h1{
+	display: inline-block;
+	color:white;
+}
+#main-right #head-right{
+	display: inline-block;
+	float:right;
+	color: cyan;	
+	position: relative;
+}
+
+#main-right #head-right h2{
+	display: inline-block;
+	margin-right: 0.8rem;
+}
+/* accordion using to display the fav songs and playlist */
+#arrow{
+	display: inline-block;
+	height: auto;
+	width: 1.2rem;
+	margin: auto;
+	
+}
+#button{
+	display: none;
+}
+#arrow i{
+	transform: rotate(180deg);
+	font-size: 2rem
+}
+#arrow-list{
+	position: absolute;
+	top:3rem;
+	right: 0rem;
+	width: 13rem;
+	height: auto;
+	padding: 5px;
+	font-size: 1.3rem;
+	background-color: #222;
+	display: none;
+
+}
+#arrow label{
+  	cursor: pointer;
+}
+#arrow-list p{
+
+	color: white;
+	line-height: 3.5rem;
+	letter-spacing: 3.3px;
+	margin-left: 1.3rem;
+}
+#arrow-list #border{
+	border-bottom: 1px solid white;
+}
+/* when you press the arrow then appears list */
+
+#button:checked ~ #arrow-list{
+  display: block;
+}
+
+
+
+/* main-right-content */
+
+/* queue-list */
+
+/* all style and design are common for each list */
+
+.queue-list{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+	cursor: pointer;
+	transition: ease-in-out 0.5s;
+}
+.queue-list:hover{
+	background-color: #151515;
+	opacity: 0.7;
+}
+
+/* to style the serial number */
+
+#main-right-content .queue-num{
+	width:15%;
+	text-align: center;
+	align-self: center;
+	font-size: 1.3rem;
+	color: white;
+	text-align:center;
+}
+
+/* to style the image */
+
+#main-right-content .queue-img{
+	width: 25%;
+}
+
+#main-right-content .queue-img img{
+	width: 100%;
+	height: 100%;
+}
+
+#main-right-content .queue-name{
+	color: whitesmoke;
+	width: 45%;
+	line-height: 2.2rem;
+	padding: 5px;
+}
+#main-right-content .queue-name p{
+	font-size: 1.2rem;
+}
+#main-right-content .queue-icon{
+	width: 15%;
+	color: whitesmoke;
+	font-size: 2rem;
+	align-self: center;
+	text-align: center;
+}
+#main-right-content .queue-icon i:hover{
+	color: red;
+}
+
+
+
+
+/* //////////footer////////// */
+footer{
+	position: fixed;
+	bottom: 0;
+	z-index: 1000552522;
+	width: 0;
+	background-color: #222;
+	display: flex;
+	padding: 5px 0;
+	justify-content: space-around;
+}
+/* initial stage */
+#footer{
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+
+/* when we click the latest container button then appears */
+#footer:target{
+	height: auto;
+	width: 100%;
+}
+ /* to show the image of artist and name */
+
+footer #song-detail{
+	width: 25rem;
+	display: flex;
+	justify-content: space-between;
+}
+footer #song-detail>div{
+	width: 6rem;
+}
+footer #song-detail #singer-name{
+	width: 11rem;
+	padding: 20px 0;
+	color: white;
+}
+
+footer #song-detail #singer-name #singer{
+	font-size: 1.6rem; 
+	display:block;
+	margin-bottom: 10px;
+}
+footer #song-detail #icon{
+	text-align: center;
+	color: white;
+	font-size: 1.8rem;
+}
+footer #song-detail #icon i{
+	margin-right: 18px;
+	margin-top: 40%;
+}
+footer #song-detail #singer-img img{
+	width: 100%;
+	height: 100%;
+}
+
+/* for audio bar */
+
+footer #audio{
+	width: 38rem;
+	text-align: center;
+	padding: 5px;
+}
+
+footer #audio #audio-icon i{
+	color: white;
+	font-size: 1.5rem;
+	margin-left: 1.8rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
+footer #audio #audio-bar>div{
+	display: inline-block;
+}
+footer #audio #audio-bar p{
+	color: white;
+	font-size: 1.2rem;
+}
+footer #audio #audio-bar input{
+	width:28rem
+}
+
+/* for manage the volume */
+footer #volume{
+	width: 20rem;
+	color: white;
+}
+footer #volume>div{
+	display: inline-block;
+	margin: 40px 12px;
+	font-size: 1.2rem;
+}
+
+
+
+/* media query */
+
+@media screen and (max-width:1400px){
+	.disp1400px{
+		display: none;
+	}
+}
+
+@media screen and (max-width:1300px){
+
+	#main-right-content .queue-img{
+		width: 30%;
+	}
+	#latest-release-content .lat-rel-img{
+		width: 10rem;
+		position: relative;
+	}
+	#pop-artist-container > div{
+		height: 11rem;
+		width:7.5rem;
+		text-align: center;
+	}
+	#pop-artist-container .pop-image{
+		width: 7rem;
+		height: 7rem;
+		padding: 5px;
+		margin-bottom: 1rem;
+	}
+	#mood-container> div{
+		width: 5.8rem;
+		height: 5.8rem;
+		position: relative;
+	}
+	
+}
+
+@media screen and (max-width:1254px){
+
+	#latest-release-content .time{
+		width:7rem ;
+		line-height: 1.6rem;
+		padding: 20px 8px;
+	}
+	
+	#main-right-content .queue-name{
+		color: whitesmoke;
+		width: 45%;
+		line-height: 2.2rem;
+		padding: 5px;
+		text-align: center;
+	}
+	#situation p{
+		font-size:1.8rem;
+	}
+	footer #audio{
+		width: 35rem;
+	}
+	footer #audio #audio-bar input{
+		width:25rem
+	}
+	
+}
+
+@media screen and (max-width:1200px){
+
+	#main-right{
+		display: none;
+	}
+
+	#main-left{
+		width: 90%;
+		height:auto;
+		padding:10px;
+	}
+	#crousal>div{
+		height: 15rem;
+		width: 26.5vw;
+	}
+	#pop-artist-container > div{
+		height: 12rem;
+		width:9rem;
+		text-align: center;
+	}
+	#pop-artist-container .pop-image{
+		width: 8.5rem;
+		height: 8.5rem;
+		padding: 5px;
+		margin-bottom: 1rem;
+	}
+	#mood-container> div{
+		width: 6.5rem;
+		height: 6.5rem;
+		position: relative;
+	}
+	#situation>div{
+		width: 27vw;
+		
+	}
+	.lat-container>div{
+
+		height: 13rem;
+		width: 12vw;
+	
+	}
+	footer #song-detail{
+		width: 21rem;
+	}
+	footer #song-detail>div{
+		width: 6rem;
+	}
+	footer #song-detail #singer-name{
+		width: 9rem;
+		padding: 10px 0;
+	}
+	footer #song-detail #singer-name #singer{
+		font-size: 1.4rem; 
+	}
+	footer #song-detail #icon i{
+		margin-right: 10px;
+	}
+	footer #audio{
+		width: 34rem;
+	}
+	footer #audio #audio-bar input{
+		width:22rem
+	}
+	footer #audio #audio-icon i{
+		font-size: 1.4rem;
+		margin-left: 1.5rem;
+	}
+	footer #volume{
+		width: 17rem;
+	}
+	footer #volume>div{
+		display: inline-block;
+		margin: 40px 5px;
+	}
+
+	
+}
+
+@media screen and (max-width:1065px){
+
+	footer #song-detail{
+		width: 18rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	footer #song-detail #singer-name #singer{
+		font-size: 1.3rem; 
+		display:block;
+		margin-bottom: 10px;
+	}
+	footer #audio{
+		width: 32rem;
+		text-align: center;
+		padding: 5px;
+	}
+	footer #volume{
+		width: 18rem;
+		color: white;
+	}
+}
+@media screen and (max-width:1000px){
+
+	#pop-artist-container > div{
+		height: 10rem;
+		width:8rem;
+		text-align: center;
+	}
+	#pop-artist-container .pop-image{
+		width: 7.5rem;
+		height: 7.5rem;
+		padding: 5px;
+		margin-bottom: 1rem;
+	}
+	#mood-container> div{
+		width: 6rem;
+		height: 6rem;
+		position: relative;
+	}
+	#situation>div{
+		width: 27.5vw;
+		
+	}
+	#situation p{
+		font-size:1.7rem;
+	}
+	.lat-container>div{
+
+		height: 12rem;
+		width: 13vw;
+	
+	}
+	
+	footer #song-detail{
+		display: none;
+	}
+	footer #audio{
+		width: 38rem;
+	}
+	footer #audio #audio-bar input{
+		width:28rem
+	}
+	footer #volume{
+		display: none;
+	}
+}
+
+@media screen and (max-width:930px){
+
+	#latest-release-content .lat-rel-img{
+		width: 13rem;
+	}
+
+	#pop-artist-container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#pop-artist-container > div{
+		height: 12rem;
+		width: 12rem;
+		margin:1rem  0.1rem;
+	}
+	#pop-artist-container .pop-image{
+		width: 10rem;
+		height: 10rem;
+		padding: 10px;
+		margin-bottom: 0.5rem;
+	}
+	
+	#mood #station{
+		display: none;
+	}
+	.lat-container{
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	.lat-container>div{
+
+		height: 16rem;
+		width: 12rem;
+		margin: 0.5rem;
+	
+	}
+
+}
+
+@media screen and (max-width:868px){
+
+	.disp868px{
+		display: none;
+	}
+	#crousal>div{
+		width: 80%;
+	}
+	#crousal img:hover{
+		transform: none;
+	}
+	#latest-release-content{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+	#latest-release-content>div{
+		height:auto;
+		width: 80%;
+		margin: 1rem 1rem 1rem 0rem;
+	}
+	#latest-release-content .lat-rel-img{
+		width: 8rem;
+		position: relative;
+	}
+	#latest-release-content .lat-title{
+
+		padding: 25px 50px;
+		width: 15rem;
+		line-height:1.7rem;
+		flex-grow: 1;
+	}
+	#header-right{
+		justify-content: flex-end;
+		width: 15%;
+		
+	}
+	#header-right #search-bar{
+		display: none;
+	
+	}
+	#header-right #aside-btn label{
+		display:block;
+		margin: 0 1rem ;
+	}
+	#pop-artist-container{
+		height: 30rem;
+		overflow-y: scroll;
+	}
+	#pop-artist-container::-webkit-scrollbar {
+		display: none;
+	}
+	#situation{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	#situation>div{
+		width: 80%;
+		height: 14rem;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 1.5rem;
+	}
+	.lat-container{
+		height: 36rem;
+		overflow-y: scroll;
+	}
+	.lat-container::-webkit-scrollbar {
+		display: none;
+	}
+	
+}
+
+
+@media screen and (max-width:755px){
+
+	#mood-container{
+		display: flex;
+		flex-wrap: wrap;
+		height:20rem;
+		overflow-y: scroll;
+	}
+	#mood-container> div{
+		width: 8rem;
+		height: 8rem;
+		margin: 1rem;
+	}
+	#mood-container::-webkit-scrollbar {
+		display: none;
+	}
+	.lat-container>div{
+
+		height: 14rem;
+		width: 10rem;
+		margin: 0.1rem;
+	
+	}
+
+}
+
+@media screen and (max-width:607px){
+
+	#crousal>div{
+		width: 100%;
+	}
+	#latest-release-content>div{
+		height:auto;
+		width: 90%;
+		margin: 1rem 1rem 1rem 0rem;
+	}
+	#latest-release-content .lat-rel-img{
+		width: 10rem;
+		position: relative;
+	}
+	#situation>div{
+		width: 100%;
+	}
+	.lat-container>div{
+		height: 16rem;
+		width: 12rem;
+		margin: 1rem;
+	
+	}
+}
+
+@media screen and (max-width:560px){
+
+	#latest-release-content .lat-rel-img{
+		width: 8rem;
+		height: 6rem;
+		position: relative;
+	}
+	.lat-container>div{
+		height: 16rem;
+		width: 11rem;
+		margin: 0.5rem;
+	
+	}
+	footer #audio{
+		width: 100%;
+	}
+	footer #audio #audio-icon i{
+		font-size: 1.3rem;
+		margin-left: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	footer #audio #audio-bar input{
+		width:20rem
+	}
+}
+
+@media screen and (max-width:483px){
+
+	#latest-release-content .lat-rel-img{
+		width: 7.5rem;
+		height: 5.5rem;
+		position: relative;
+	}
+	#pop-artist-container > div{
+		height: 10rem;
+		width: 10rem;
+		margin:1rem  0.1rem;
+	}
+	#pop-artist-container .pop-image{
+		width: 8rem;
+		height: 8rem;
+		padding: 10px;
+		margin-bottom: 0.5rem;
+	}
+	.lat-container>div{
+		height: 14rem;
+		width: 10rem;
+		margin: 0.4rem;
+	
+	}
+	#latest-release-content .lat-title{
+
+		padding: 25px 15px;
+		width: 15rem;
+		line-height:1.7rem;
+		flex-grow: 1;
+	}
+
+	
+}
+
+@media screen and (max-width:427px){
+
+	aside{
+		width: 300px;
+	}
+	#latest-release-content .lat-rel-img{
+		width: 7.2rem;
+		height: 5rem;
+		position: relative;
+	}
+	#latest-release-content .lat-title{
+
+		padding: 20px 5px;
+	}
+	#pop-artist-container > div{
+		height: 9rem;
+		width: 9rem;
+		margin:1rem  0rem;
+	}
+	#pop-artist-container .pop-image{
+		width: 7rem;
+		height: 7rem;
+		padding: 10px;
+		margin-bottom: 0.5rem;
+	}
+	#mood-container> div{
+		width: 7rem;
+		height: 7rem;
+		margin: 1rem 0.5rem;
+	}
+	.lat-container>div{
+		height: 12rem;
+		width: 8.5rem;
+		margin: 1rem  0.1rem;
+	
+	}
+	footer #audio #audio-bar input{
+		width:18rem
+	}
+
+}
+
+@media screen and (max-width:380px){
+
+	aside{
+		width: 240px;
+	}
+	#header-right #search-bar input{
+		width: 95%;
+		font-size: 1.2rem;
+	}
+	#header-right #search-bar span{
+		font-size: 1.2rem;
+	}
+	#header-right #search-bar input::placeholder{
+		font-size: 0.1rem;
+	}
+	#latest-release-content .lat-rel-img{
+		width: 6.7rem;
+		height: 4rem;
+		position: relative;
+	}
+	#latest-release-content .lat-title{
+
+		padding: 5px 5px;
+	}
+	#latest-release-content .time{
+		padding: 8px 8px;
+	}
+	#pop-artist-container > div{
+		height: 12rem;
+		width: 12rem;
+		margin:1rem  0rem;
+	}
+	#pop-artist-container .pop-image{
+		width: 10rem;
+		height: 10rem;
+		padding: 10px;
+		margin-bottom: 0.5rem;
+	}
+	#mood-container> div{
+		width: 6.8rem;
+		height: 6.8rem;
+		margin: 1rem 0.5rem;
+	}
+	.lat-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		
+	}
+	.lat-container>div{
+		height: 15rem;
+		width: 10rem;
+		margin: 1rem  0.1rem;
+	
+	}
+	footer #audio #audio-icon i{
+		font-size: 1.3rem;
+		margin-left: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	footer #audio #audio-bar input{
+		width:16rem
+	}
+	
+}
+
+@media screen and (max-width:345px){
+	
+	footer #audio #audio-icon i{
+		font-size: 1.1rem;
+		margin-left: 0.5rem;
+	}
+	footer #audio #audio-bar input{
+		width:14rem
+	}
+}

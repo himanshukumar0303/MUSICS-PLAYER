@@ -1,0 +1,813 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+	background-color:black;
+}
+
+
+/* body-header */
+
+header{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	background-color:#151515;
+}
+/* body-header-left */
+
+#header-left{
+	width: 35%;
+	position: relative;
+	display: flex;
+}
+
+header #logo{
+	width: 100px;
+}
+header #logo img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+header #logo-name{
+	width: 10vw;
+	color: white;
+	margin-left: 10px;
+	padding-top: 15px;
+}
+header #logo-name span{
+	display: block;
+	font-size: 1.5rem;
+}
+
+header #favourite{
+	width: 2rem;
+	align-self: center;
+
+}
+header #favourite h2{
+	cursor: pointer;
+	color: rgb(151, 145, 145);
+	transition: ease-in-out 0.5s;
+}
+header #favourite h2:hover{
+	color: rgb(212, 212, 212);
+}
+
+/* body-header-right */
+
+#header-right{
+	width: 55%;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* header-search-conatiner */
+
+#header-right #search-bar{
+	width: 70%;
+	height: 50px;
+	border-radius: 20px;
+	padding: 5px;
+	position: relative;
+	background-color: #5050ff4d;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+/* header-search-bar */
+
+#header-right #search-bar input{
+	width: 85%;
+	font-size: 1.6rem;
+	outline: none;
+	border: none;
+	padding: 5px;
+	color: white;
+	background-color: #5050ff00;
+}
+
+#header-right #search-bar input::placeholder{
+	font-size: 1.7rem;
+}
+
+/* search-container-icon */
+#header-right #search-bar span{
+	color: silver;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+
+/* notification-bell */
+
+#header-right #noto-bell{
+	font-size: 2rem;
+}
+
+#header-right #noto-bell a{
+	color: white;
+}
+
+/* user-profile-avatar */
+#header-right #header-profile{
+	width: 4rem;
+	height: 4rem;
+	
+}
+#header-right #header-profile img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+/* used for mobile mode and tablet mode making using accordion */
+#header-right #aside-btn input{
+	display: none;
+}
+#header-right #aside-btn label{
+	color: white;
+	font-size: 1.8rem;
+	cursor: pointer;
+	display: none;
+}
+
+/* aside-secion-for mobile and tablet mode */
+aside{
+	width: 330px;
+	height: 100vh;
+	background-color: black;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index:999999999999;
+	display: none;
+}
+#btn:checked ~ #aside{
+	display: block;
+	opacity: 1;
+  
+}
+
+/* aside-container */
+
+#aside #aside-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* aside-user-avatar */
+#aside #aside-profile{
+	width: 5rem;
+	height: 5rem;
+	margin: 2rem 0;
+}
+#aside #aside-profile img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+/* to see the fav list */
+#aside #aside-fav{
+	font-size: 2rem;
+	margin: 0rem 0 2rem;
+	color: white;
+	cursor: pointer;
+}
+/* search-bar */
+#aside #aside-search-bar{
+	width: 85%;
+	height: 50px;
+	border-radius: 10px;
+	padding: 5px;
+	position: relative;
+	background-color: #5050ff4d;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#aside #aside-search-bar #input{
+	width: 85%;
+	font-size: 1.6rem;
+	outline: none;
+	border: none;
+	padding: 5px;
+	color: white;
+	background-color: #5050ff00;
+	display: block;
+}
+/* search-icon */
+#aside #aside-search-bar span{
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+#aside #aside-search-bar #input::placeholder{
+	font-size: 1.7rem;
+}
+
+#aside #aside-search-bar span .fa-microphone{
+	color: silver;
+}
+
+/* main */
+
+main{
+	display: flex;
+	margin-top: 1.2rem;
+	position: relative;
+	justify-content: space-around;
+}
+
+/* main part divide into two parts */
+
+/* main-left */
+
+#main-left{
+	width: 70%;
+	height:auto;
+	padding:10px 50px;
+}
+
+/* artist-details-conatiner */
+
+#artist-description{
+    width: 100%;
+    height: 15rem;
+    background-color: #151515;
+    display: flex;
+}
+/* artist image */
+#artist-description #artist-image{
+    width: 20vw;
+}
+#artist-description #artist-image img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+/* about artist */
+#artist-description #about-artist{
+    width:65%;
+    padding: 1rem;
+}
+
+/* name and followes */
+
+#artist-description #about-artist #name-followers{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* to change the color of folllower */
+
+#artist-description #about-artist #name-followers p{
+    color: grey;
+ }
+
+ /* artist-details */
+
+#artist-description #about-artist #details{
+    text-align: justify;
+	margin-top: 1rem;
+	width: 100%;
+	height: 6rem;
+}
+
+/* play-btn */
+
+#artist-description #about-artist #play-btn{
+    margin-top: 0.2rem;
+}
+#artist-description #about-artist #play-btn button{
+    padding: 5px;
+    background-color: dodgerblue;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    outline: none;
+    border: none;
+    width: 10rem;
+    cursor: pointer;
+}
+
+/* queue-list */
+#queue-list{
+	width: 100%;
+	height: 40rem;
+	overflow-y: scroll;
+	margin-top: 1rem;
+}
+
+/* to hide the scrollbar */
+
+#queue-list::-webkit-scrollbar{
+	display: none;
+}
+
+/* common style for queue item */
+
+.queue-item{
+	width: 100%;
+	height: 3.5rem;
+	display: flex;
+	background-color: #222;
+	margin-top: 1rem;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* styyle the serial no */
+
+.serial-no{
+	width: 7%;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+/* to style the image */
+
+.image{
+	width: 4.5rem;
+}
+.image img{
+	width: 100%;
+	height: 100%;
+}
+
+/* queue name */
+.name{
+	flex-grow: 1;
+	font-size: 2rem;
+	margin-left: 0.5rem;
+}
+/* sytle the icon */
+.heart{
+	width: 5rem;
+	text-align: center;
+	font-size: 2rem;
+	cursor: pointer;
+}
+.heart i:hover{
+	color: red;
+}
+.plus{
+	width: 3rem;
+	text-align: center;
+	font-size: 2.5rem;
+	cursor: pointer;
+}
+
+
+
+
+/* main-right */
+#main-right{
+	width: 25%;
+}
+
+/* main right divided into two portion one is upper and another is right */
+
+/* common style both portion */
+#main-right .right-heading{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-right-content{
+	height:35vh;
+	overflow-y: scroll;
+	margin-top: 1rem;
+	
+}
+
+/* to hide the scrollbar */
+
+.main-right-content::-webkit-scrollbar{
+	display: none;
+}
+
+/* common style for each item */
+
+.main-right-content .item{
+	display: flex;
+	height: auto;
+	justify-content: space-around;
+	align-items: center;
+	transition: ease-in-out 0.5s;
+	margin-top: 1rem;
+}
+.main-right-content .item:hover{
+	background-color: #151515;
+}
+
+.main-right-content .item .img{
+	width:5rem;
+	
+}
+
+.main-right-content .item .img img{
+	width:100%;
+	height: 100%;
+	
+}
+.main-right-content .item .name{
+	font-size: 1.5rem;
+	
+}
+.main-right-content .item .icon{
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+/* to manage the margin only i used */
+#main-right-lower{
+	margin-top: 5rem;
+}
+
+
+
+
+
+
+/* //////////footer////////// */
+footer{
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	background-color: #222;
+	display: flex;
+	padding: 5px 0;
+	justify-content: space-around;
+}
+#footer{
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+ /* to show the image of artist and name */
+
+footer #song-detail{
+	width: 25rem;
+	display: flex;
+	justify-content: space-between;
+}
+footer #song-detail>div{
+	width: 6rem;
+}
+footer #song-detail #singer-name{
+	width: 11rem;
+	padding: 20px 0;
+	color: white;
+}
+
+footer #song-detail #singer-name #singer{
+	font-size: 1.6rem; 
+	display:block;
+	margin-bottom: 10px;
+}
+footer #song-detail #icon{
+	text-align: center;
+	color: white;
+	font-size: 1.8rem;
+}
+footer #song-detail #icon i{
+	margin-right: 18px;
+	margin-top: 40%;
+}
+footer #song-detail #singer-img img{
+	width: 100%;
+	height: 100%;
+}
+
+/* for audio bar */
+
+footer #audio{
+	width: 38rem;
+	text-align: center;
+	padding: 5px;
+}
+
+footer #audio #audio-icon i{
+	color: white;
+	font-size: 1.5rem;
+	margin-left: 1.8rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
+footer #audio #audio-bar>div{
+	display: inline-block;
+}
+footer #audio #audio-bar p{
+	color: white;
+	font-size: 1.2rem;
+}
+footer #audio #audio-bar input{
+	width:28rem
+}
+
+/* for manage the volume */
+footer #volume{
+	width: 20rem;
+	color: white;
+}
+footer #volume>div{
+	display: inline-block;
+	margin: 40px 12px;
+	font-size: 1.2rem;
+}
+
+
+/* media query */
+
+
+
+@media screen and (max-width:1254px){
+
+
+	footer #audio{
+		width: 35rem;
+	}
+	footer #audio #audio-bar input{
+		width:25rem
+	}
+	
+}
+
+@media screen and (max-width:1200px){
+
+	#main-right{
+		display: none;
+	}
+
+	#main-left{
+		width: 90%;
+		height:auto;
+		padding:10px;
+	}
+
+	footer #song-detail{
+		width: 21rem;
+	}
+	footer #song-detail>div{
+		width: 6rem;
+	}
+	footer #song-detail #singer-name{
+		width: 9rem;
+		padding: 10px 0;
+	}
+	footer #song-detail #singer-name #singer{
+		font-size: 1.4rem; 
+	}
+	footer #song-detail #icon i{
+		margin-right: 10px;
+	}
+	footer #audio{
+		width: 34rem;
+	}
+	footer #audio #audio-bar input{
+		width:22rem
+	}
+	footer #audio #audio-icon i{
+		font-size: 1.4rem;
+		margin-left: 1.5rem;
+	}
+	footer #volume{
+		width: 17rem;
+	}
+	footer #volume>div{
+		display: inline-block;
+		margin: 40px 5px;
+	}
+
+	
+}
+
+@media screen and (max-width:1065px){
+
+	#artist-description{
+		width: 100%;
+		height: 18rem;
+		background-color: #151515;
+		display: flex;
+	}
+	#artist-description #artist-image{
+		width: 25vw;
+	}
+	#artist-description #about-artist{
+		width:65vw;
+		padding: 1rem;
+	}
+	#artist-description #about-artist #details{
+		text-align: justify;
+		margin-top: 1rem;
+		width: 100%;
+		height: 8rem;
+	}
+	#artist-description #about-artist #play-btn{
+		margin-top: 0rem;
+	}
+	footer #song-detail{
+		width: 18rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	footer #song-detail #singer-name #singer{
+		font-size: 1.3rem; 
+		display:block;
+		margin-bottom: 10px;
+	}
+	footer #audio{
+		width: 32rem;
+		text-align: center;
+		padding: 5px;
+	}
+	footer #volume{
+		width: 18rem;
+		color: white;
+	}
+}
+@media screen and (max-width:1000px){
+
+	
+	
+	footer #song-detail{
+		display: none;
+	}
+	footer #audio{
+		width: 38rem;
+	}
+	footer #audio #audio-bar input{
+		width:28rem
+	}
+	footer #volume{
+		display: none;
+	}
+}
+
+
+
+@media screen and (max-width:868px){
+
+	#header-right{
+		justify-content: flex-end;
+		width: 15%;
+		
+	}
+	#header-right #search-bar{
+		display: none;
+	
+	}
+	header #favourite{
+		display: none;
+	
+	}
+	#header-right #aside-btn label{
+		display:block;
+		margin: 0 1rem ;
+	}
+
+	#artist-description{
+		height: 19rem;
+	}
+	#artist-description #artist-image{
+		width: 35vw;
+	}
+	#artist-description #about-artist{
+		width:65vw;
+		padding: 1rem;
+	}
+	#artist-description #about-artist #details{
+		height: 10rem;
+	}
+	
+	
+	
+}
+
+
+@media screen and (max-width:755px){
+
+	#artist-description{
+		height: 20rem;
+	}
+	#artist-description #artist-image{
+		width: 42vw;
+	}
+	#artist-description #about-artist{
+		width:58vw;
+		padding: 1rem;
+	}
+	#artist-description #about-artist #details{
+		height: 11rem;
+	}
+	
+}
+
+@media screen and (max-width:607px){
+	#artist-description{
+		width: 100%;
+		height: 15rem;
+		background-color: #151515;
+		display: flex;
+		flex-direction: column;
+	}
+	#artist-description{
+		height: auto;
+	}
+	#artist-description #artist-image{
+		width: 100%;
+	}
+	#artist-description #about-artist{
+		width:100%;
+		padding: 1rem;
+	}
+	#artist-description #about-artist #details{
+		height:auto;
+		margin-bottom: 1rem;
+	}
+
+}
+
+@media screen and (max-width:560px){
+
+	
+	footer #audio{
+		width: 100%;
+	}
+	footer #audio #audio-icon i{
+		font-size: 1.3rem;
+		margin-left: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	footer #audio #audio-bar input{
+		width:20rem
+	}
+}
+
+
+
+@media screen and (max-width:427px){
+
+	aside{
+		width: 300px;
+	}
+	
+	footer #audio #audio-bar input{
+		width:18rem
+	}
+
+}
+
+@media screen and (max-width:380px){
+
+	aside{
+		width: 240px;
+	}
+	#header-right #search-bar input{
+		width: 95%;
+		font-size: 1.2rem;
+	}
+	#header-right #search-bar span{
+		font-size: 1.2rem;
+	}
+	#header-right #search-bar input::placeholder{
+		font-size: 0.1rem;
+	}
+	
+	footer #audio #audio-icon i{
+		font-size: 1.3rem;
+		margin-left: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	footer #audio #audio-bar input{
+		width:16rem
+	}
+	
+}
+
+@media screen and (max-width:345px){
+	
+	footer #audio #audio-icon i{
+		font-size: 1.1rem;
+		margin-left: 0.5rem;
+	}
+	footer #audio #audio-bar input{
+		width:14rem
+	}
+}

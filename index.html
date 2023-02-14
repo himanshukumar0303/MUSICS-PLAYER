@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>music player</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+	 integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="https://img.etimg.com/thumb/width-640,height-480,imgsize-622277,resizemode-1,msid-71477539/magazines/
+			panache/feel-like-listening-to-sad-songs-new-dj-like-algorithm-creates-playlist-plays-music-that-matches-your-moods/music_thinkstockphotos.jpg">
+</head>
+<body>
+	<header>
+		<div  id="header-left">
+			<div id="logo">
+				<a href="index.html"><img src="https://lh3.googleusercontent.com/HQm_x5ZH-Y61Ca6Q8_TJLmkROyW4yso6DjRxqBaf3Y7yO1yfAyWkmyB5Cry5GNBx45PI"></a>
+			</div>
+			<div id="logo-name">
+				<span style="color: darkorange;">Music</span><span style="color: cyan;">Studios</span>
+			</div>
+			<div id="favourite" class="disp868px">
+				<h2>Favourites</h2>
+			</div>
+
+		</div>
+
+		<div id="header-right">
+			<div id="search-bar">
+				<span ><i class="fas fa-search"></i></span>
+					<input type="text" name="search" placeholder="Search">
+					<span><i class="fas fa-microphone"></i></span>
+			</div>
+			<div id="noto-bell">
+				<a href=""><i class="fas fa-bell"></i></a>
+			</div>
+			<div id="header-profile" class="disp868px">
+					<img src="images/profile.jpg">
+			</div>
+			<div id="aside-btn">
+				<input type="checkbox" id="btn">
+				<label for="btn"><i class="fas fa-align-justify"></i></label>
+				<aside id="aside">
+					<div id="aside-container">
+
+						<div id="aside-profile">
+							<img src="images/profile.jpg">
+						</div>
+						<div id="aside-fav"><p>Favourites</p></div>
+						<div id="aside-search-bar">
+							<span><i class="fas fa-search"></i></span>
+							<input type="text" name="search" placeholder="Search" id="input">
+							<span><i class="fas fa-microphone"></i></span>
+						</div>
+
+					</div>
+						
+				</aside>
+			</div>
+		</div>
+	</header>
+	
+
+	<main>
+		<div id="main-left">
+			<div id="carousel">
+				<div class="gray" id="firstImg"></div>
+				<div  id="middleImg"></div>
+                <div class="gray" id="thirdImg"></div>
+                
+			</div>
+
+			<div id="latest-release">
+				<h2>Latest Release</h2>
+				<div id="latest-release-content">
+					<div class="lat-release">
+						<div class="lat-rel-img"><img src="https://in.bookmyshow.com/entertainment/wp-content/uploads/2019/02/Gully-boy-review_960x540.jpg">
+							<div class="fs-play"><a href="#footer"><i class="fas fa-play"></i></a></div>
+						 </div>
+						<div class="lat-title"><h3>Gully Boy</h3>
+							<p>Aug 11,2017</p>
+						</div>
+						<div class="time">
+							<div id="ecclipse1">
+								<input type="checkbox" id="button1">
+								 <label for="button1"><i class="fas fa-ellipsis-h"></i></label>
+								 <div id="ecclipse1-list">
+									<div><i class="fas fa-play"></i><p>Play Now</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-plus"></i><p>Add To Queue</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-folder-plus"></i><p>Add To Favorite</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-exclamation-circle"></i><p>Get Info</p></div>
+								  </div>
+							</div>
+							<p>4 : 44</p>
+						</div>
+					</div>
+					<div class="lat-release">
+						<div class="lat-rel-img"><img src="https://i.ytimg.com/vi/za4Q_7gYyS4/maxresdefault.jpg">
+							<div class="fs-play"><a href="#footer"><i class="fas fa-play"></i></a></div> 
+						</div>
+						<div class="lat-title"><h3>Jaan Nisar</h3>
+							<p>Aug 11,2017</p>
+						</div>
+						<div class="time">
+							<div id="ecclipse2">
+								<input type="checkbox" id="button2">
+								 <label for="button2"><i class="fas fa-ellipsis-h"></i></label>
+								 <div id="ecclipse2-list">
+									<div><i class="fas fa-play"></i><p>Play Now</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-plus"></i><p>Add To Queue</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-folder-plus"></i><p>Add To Favorite</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-exclamation-circle"></i><p>Get Info</p></div>
+								  </div>
+							</div>
+							<p>4 : 44</p>
+						</div>
+					</div>
+					<div class="lat-release">
+						<div class="lat-rel-img"><img src="https://i.ytimg.com/vi/KBIq11mNB0I/maxresdefault.jpg">
+							<div class="fs-play"><a href="#footer"><i class="fas fa-play"></i></a></div> 
+						</div>
+						<div class="lat-title"><h3>Malang</h3>
+							<p>Aug 11,2017</p>
+						</div>
+						<div class="time">
+							<div id="ecclipse3">
+								<input type="checkbox" id="button3">
+								 <label for="button3"><i class="fas fa-ellipsis-h"></i></label>
+								 <div id="ecclipse3-list">
+									<div><i class="fas fa-play"></i><p>Play Now</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-plus"></i><p>Add To Queue</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-folder-plus"></i><p>Add To Favorite</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-exclamation-circle"></i><p>Get Info</p></div>
+								  </div>
+							</div>
+							<p>4 : 44</p>
+						</div>
+					</div>
+					<div class="lat-release">
+						<div class="lat-rel-img"><img src="https://s2.dmcdn.net/v/QMwlN1T1U08HkTw_i/x1080">
+							<div class="fs-play"><a href="#footer"><i class="fas fa-play"></i></a></div>
+						 </div>
+						<div class="lat-title"><h3>Raabta</h3>
+							<p>Aug 11,2017</p>
+						</div>
+						<div class="time">
+							<div id="ecclipse4">
+								<input type="checkbox" id="button4">
+								 <label for="button4"><i class="fas fa-ellipsis-h"></i></label>
+								 <div id="ecclipse4-list">
+									<div><i class="fas fa-play"></i><p>Play Now</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-plus"></i><p>Add To Queue</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-folder-plus"></i><p>Add To Favorite</p></div>
+									<div class="hr"></div>
+									<div><i class="fas fa-exclamation-circle"></i><p>Get Info</p></div>
+							 	 </div>
+							  </div>
+							<p>4 : 44</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="pop-artist">
+				<h2>Popular Artists</h2>
+				<div id="pop-artist-container">
+					<div>
+						<div class="pop-image"><img src="https://pbs.twimg.com/media/DNyJlcrUQAEPne_.jpg">
+							<div class="artist-det"><a href="artist.html"><i class="fas fa-play"></i></a></div>
+						</div>
+						<div class="pop-name"><h3>Arman Malik</h3></div>	
+					</div>
+					<div>
+						<div class="pop-image"><img src="images/pitbull.jpg">
+							<div class="artist-det"><a href="artist.html"><i class="fas fa-play"></i></a></div>
+						</div>
+						<div class="pop-name"><h3>Pitbull</h3></div>
+					</div>
+					<div>
+						<div class="pop-image"><img src="https://hkpub.net/wp-content/uploads/2019/07/
+									Ed-Sheeran-Press-Photo-2-Credit-Mark-Surridge-crop.jpg">
+									<div class="artist-det"><a href="artist.html"><i class="fas fa-play"></i></a></div>
+						</div>
+						<div class="pop-name"><h3>Ed Sheeran</h3></div>
+					</div>
+					<div>
+						<div class="pop-image"><img src="https://www.pinkvilla.com/files/styles/
+							contentpreview/public/Arijit_Singh_1.jpg?itok=8o7nCuOY">
+							<div class="artist-det"><a href="artist.html"><i class="fas fa-play"></i></a></div>
+						</div>
+						<div class="pop-name"><h3>Arjit Singh</h3></div>
+					</div>
+					<div>
+						<div class="pop-image"><img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2018/06/wq-1529390691.jpg">
+							<div class="artist-det"><a href="artist.html"><i class="fas fa-play"></i></a></div>
+						</div>
+						<div class="pop-name"><h3>Badsaah</h3></div>
+					</div>
+					<div>
+						<div class="pop-image"><img src="https://www.jagranimages.com/inext/nehuuu_b_.jpg">
+							<div class="artist-det"><a href="artist.html"><i class="fas fa-play"></i></a></div>
+						</div>
+						<div class="pop-name"><h3>Neha Kakkar</h3></div>
+					</div>
+				</div>
+			</div>
+			<div id="mood">
+				<div id="station">
+					 <img src="images/station1.jpg">
+				</div>
+				<div id="mood-container">
+					<div><img src="images/moodlove.jpg"><h3>Love</h3></div>
+					<div><img src="images/moodradio.png"><h3>Retro</h3></div>
+					<div><img src="images/moodchill.jpg"><h3>Chill</h3></div>
+					<div><img src="images/moodrock.jpg"><h3>Rock</h3></div>
+					<div><img src="images/moodpop.jpg"><h3>Pop</h3></div>
+					<div class="disp1400px"><img src="images/moodlove.jpg"><h3>Love</h3></div>
+					<div><img src="images/moodchill.jpg"><h3>Chill</h3></div>
+				</div>
+			</div>
+			<div id="situation">
+				<div><img src="images/party.jpg"><p>Party</p></div>
+				<div><img src="images/eletronics.jpg"><p>Electronics</p></div>
+				<div><img src="images/roadtrip.jpg"><p>Road Trip</p></div>
+			</div>
+			<div class="latest">
+				<h2>Latest English</h2>
+				<div class="lat-container">
+					<div><img src="https://images-na.ssl-images-amazon.com/images/I/71SM5VERaPL.jpg"><h3>Perfect</h3><p>jun 24 , 2020</p></div>
+					<div><img src="https://i.ytimg.com/vi/fkpsblQwuUs/maxresdefault.jpg"><h3>Shake it off</h3><p>jun 24 , 2020</p></div>
+					<div><img src="images/queue3.jpg"><h3>Onism</h3><p>jun 24 , 2020</p></div>
+					<div><img src="images/queue4.jpg"><h3>Onism</h3><p>jun 24 , 2020</p></div>
+					<div><img src="images/queue5.jpg"><h3>Onism</h3><p>jun 24 , 2020</p></div>
+					<div><img src="https://img.discogs.com/k5iKHVhG-ZG8Rv24qx9jvdamN38=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12557489-1537565881-6125.jpeg.jpg"><h3>Shape of  You</h3><p>jun 24 , 2020</p></div>
+				</div>
+			</div>
+			<div class="latest">
+				<h2>Latest Hindi</h2>
+				<div class="lat-container">
+					<div><img src="https://i.pinimg.com/originals/45/7b/cf/457bcfcd6f502cb5814e25e89e47b2f2.jpg"><h3>Bekhayali</h3><p>jun 24 , 2020</p></div>
+					<div><img src="https://m.media-amazon.com/images/M/MV5BN2Y0YjJkMTctNjNmMC00MDkyLTkzZDktMWZmNTdmN2YyNWNmXkEyXkFqcGdeQXVyMTA5NzIyMDY5._V1_.jpg"><h3>Khairiyat</h3><p>jun 24 , 2020</p></div>
+					<div><img src="https://images.hungama.com/c/1/89d/bda/47309655/47309655_300x300.jpg"><h3>Duniyaa</h3><p>jun 24 , 2020</p></div>
+					<div><img src="https://i.ytimg.com/vi/5KfOHmY6kag/maxresdefault.jpg"><h3>
+						Qaafirana</h3><p>jun 24 , 2020</p></div>
+					<div><img src="https://i.ytimg.com/vi/K-Ts-NFR62o/maxresdefault.jpg"><h3>Jab Tak</h3><p>jun 24 , 2020</p></div>
+					<div><img src="https://i.ytimg.com/vi/DK_UsATwoxI/maxresdefault.jpg"><h3>Nazm Nazm</h3><p>jun 24 , 2020</p></div>
+				</div>
+			</div>
+
+		</div>
+		<div id="main-right">
+			<div id="main-right-heading">
+				<h1>Queue</h1>
+				<div id="head-right">
+					<h2>Queue</h2>
+					<div id="arrow">
+						<input type="checkbox" id="button">
+						 <label for="button"><i class="fas fa-sort-up"></i></label>
+						 <div id="arrow-list">
+							<p>Playlist</p>
+							<div id="border"></div>
+							<p>Favorite Songs</p>
+					  </div>
+					  </div>
+				</div>
+			</div>
+			<div id="main-right-content">
+				<div class="queue-list">
+					<div class="queue-num">01</div>
+					<div class="queue-img"><img src="images/queue1.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+				<div class="queue-list">
+					<div class="queue-num">02</div>
+					<div class="queue-img"><img src="images/queue2.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+				<div class="queue-list">
+					<div class="queue-num">03</div>
+					<div class="queue-img"><img src="images/queue3.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+				<div class="queue-list">
+					<div class="queue-num">04</div>
+					<div class="queue-img"><img src="images/queue4.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+				<div class="queue-list">
+					<div class="queue-num">05</div>
+					<div class="queue-img"><img src="images/queue5.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+				<div class="queue-list">
+					<div class="queue-num">06</div>
+					<div class="queue-img"><img src="images/queue10.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+				<div class="queue-list">
+					<div class="queue-num">07</div>
+					<div class="queue-img"><img src="images/queue7.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+				<div class="queue-list">
+					<div class="queue-num">08</div>
+					<div class="queue-img"><img src="images/queue8.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+				<div class="queue-list">
+					<div class="queue-num">09</div>
+					<div class="queue-img"><img src="images/queue9.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+				<div class="queue-list">
+					<div class="queue-num">10</div>
+					<div class="queue-img"><img src="images/queue10.jpg"></div>
+					<div class="queue-name"><h2>Mirage</h2><p>Else</p></div>
+					<div class="queue-icon"><i class="far fa-heart"></i></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+	<footer id="footer">
+		<div id="song-detail">
+			<div id="singer-img"><img src="images/arman.jpg"></div>
+			<div id="singer-name"><span id="singer">Imagine by Ar</span><span>Arman Malik</span></div>
+			<div id="icon"><i class="far fa-heart"></i><i class="fas fa-ban"></i></div>
+		</div>
+		<div id="audio">
+			<div id="audio-icon">
+				<i class="fas fa-random"></i>
+				<i class="fas fa-step-backward"></i>
+				<i class="far fa-pause-circle"></i>
+				<i class="fas fa-step-forward"></i>
+				<i class="fas fa-sync"></i>
+			</div>
+			<div id="audio-bar">
+				<div><p>1:39</p></div>
+				<div><input type="range" max="100"></div>
+				<div><p>4:44</p></div>
+			</div>
+		</div>
+		<div id="volume">
+			<div><i class="far fa-file-audio"></i></div>
+			<div><i class="fas fa-headphones"></i></div>
+			<div><i class="fas fa-volume-up"></i></div>
+			<div><input type="range"></div>
+			
+		</div>
+	</footer>
+</body>
+</html>
